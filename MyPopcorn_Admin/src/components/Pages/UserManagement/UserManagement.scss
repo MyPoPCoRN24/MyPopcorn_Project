@@ -1,0 +1,37 @@
+@import "../../../assets/scss/variables.scss";
+
+.user {
+  &__title {
+    margin: 0 0 2rem;
+
+    h3 {
+      color: $text;
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin: 0;
+
+      @media #{$xs} {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__top {
+    .dashboard__grid {
+      grid-template-columns: repeat(3, 1fr);
+
+      @media #{$xs} {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media #{$md} {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  &__table {
+    margin: 3rem 0 0;
+    position: relative;
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../../assets/scss/variables.scss";
+
+.surveys {
+    &__title {
+        margin: 0 0 2rem;
+
+        h3 {
+            color: $text;
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin: 0;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__row {
+        .dashboard__grid {
+            grid-template-columns: repeat(3, 1fr);
+
+            @media #{$xs} {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media #{$md} {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+    }
+
+    &__list {
+        margin: 3rem 0 0;
+    }
+
+    &__arrow-btn {
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+
+        button {
+            all: unset !important;
+            cursor: pointer !important;
+
+            img {
+                max-width: 3rem;
+            }
+        }
+    }
+
+    &__list-row {
+        margin: 2rem 0 0;
+
+        .dashboard__survey-list {
+            min-height: 45rem;
+            position: relative;
+        }
+    }
+
+    &__no-data {
+        min-height: 45rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 37.3px 0px #00000008;
+        background-color: $white;
+        border: 1px solid #E5E5EE;
+        flex-direction: column;
+        border-radius: 0.8rem;
+    }
+
+    &__create-btn {
+        margin: 2rem 0 0;
+
+        a {
+            min-width: 20rem;
+        }
+    }
+}

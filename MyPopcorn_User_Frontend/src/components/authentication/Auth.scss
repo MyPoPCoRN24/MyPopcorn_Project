@@ -1,0 +1,228 @@
+@import "../../assets/scss/variables.scss";
+
+.auth {
+    background-color: $white;
+
+    &__right {
+        background-color: $primary;
+        border-radius: 1.6rem;
+
+        @media #{$xs} {
+            display: none;
+        }
+
+
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 2rem 0;
+
+        .ant-row {
+            width: 100%;
+        }
+    }
+
+    &__right-content {
+        margin: 0 0 6rem;
+        padding: 6rem;
+
+        h4 {
+            color: $text;
+            font-size: 2.4rem;
+            font-weight: 500;
+            margin: 0 0 0.5rem;
+        }
+
+        p {
+            color: $text;
+            font-weight: 500;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+    }
+
+    &__right-img {
+        text-align: center;
+    }
+
+    &__logo {
+        margin: 0 0 6rem;
+    }
+
+    &__left {
+        margin: 10rem 0 0;
+
+        @media #{$xm} {
+            margin: 0;
+        }
+
+        @media #{$lg} {
+            margin: 0;
+        }
+    }
+
+    &__left-content {
+        margin: 0 0 4rem;
+
+        h4 {
+            color: $text;
+            font-size: 2.4rem;
+            font-weight: 500;
+            margin: 0 0 0.5rem;
+        }
+
+        p {
+            color: $text;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+
+    &__btn {
+        margin: 3rem 0 0;
+
+        button {
+            height: 4.6rem;
+            background-color: #14162C !important;
+            padding: 1.2rem 1.6rem;
+            border-radius: 0.8rem;
+            color: $white !important;
+            font-size: 1.6rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            width: 100%;
+        }
+    }
+
+    &__sign {
+        margin: 3.2rem 0 0;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+
+        p,
+        a {
+            color: #01002F;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: underline !important;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 1.2rem;
+
+        p {
+            color: #4F4F4F;
+            font-weight: 400;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        a {
+            color: #848698;
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+
+    &__resend {
+        text-align: center;
+        color: #4F4F4F;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin: 2rem 0 0;
+
+        a {
+            text-decoration: underline !important;
+            color: #4F4F4F;
+
+        }
+    }
+
+    &__cancel {
+        margin: 3.2rem 0 0;
+        text-align: center;
+
+        button {
+            all: unset;
+            cursor: pointer;
+            color: #01002F !important;
+            font-size: 1.4rem;
+            font-weight: 500;
+
+            &:hover {
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    &__google-btn {
+        border: 1px solid #D9D9D9 !important;
+        border-radius: 0.8rem;
+        padding: 1.2rem 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+        background-color: transparent !important;
+        width: 100%;
+        height: 4.6rem;
+
+        p {
+            color: #14162C;
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+
+    &__or {
+        margin: 3rem 0;
+
+        p {
+            color: #4F4F4F;
+            font-weight: 400;
+            font-size: 1.4rem;
+            margin: 0;
+            text-align: center;
+
+            &::before,
+            &::after {
+                background-color: #D9D9D9;
+                content: "";
+                display: inline-block;
+                height: 1px;
+                position: relative;
+                vertical-align: middle;
+                width: 45%;
+            }
+
+            &::before {
+                right: 1em;
+                margin-left: -50%;
+            }
+
+            &::after {
+                left: 1em;
+                margin-right: -50%;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,505 @@
+@import "../../../assets/scss/variables.scss";
+
+.wallet {
+    &__title {
+        margin: 0 0 2.4rem;
+
+        h3 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin: 0;
+            color: $text;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__left {
+        background-color: $white;
+        height: 100%;
+        box-shadow: 0px 4px 37.3px 0px #00000008;
+        padding: 2.4rem;
+        border: 1px solid #E5E5EE;
+        border-radius: 0.8rem;
+    }
+
+    &__box {
+        background-color: #FAB216;
+        border-radius: 0.8rem;
+        padding: 1.6rem 2.4rem;
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 0 0 0.8rem;
+            color: $text;
+        }
+
+        h4 {
+            color: $text;
+            margin: 0;
+            font-size: 3.2rem;
+            font-weight: 700;
+
+        }
+    }
+
+    &__btn-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        margin: 2rem 0 0;
+
+        button {
+            background-color: #FFD476 !important;
+            padding: 1.2rem 1.6rem;
+            border-radius: 0.8rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: $text !important;
+            border: none !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3.8rem;
+            width: 100%;
+
+
+        }
+    }
+
+    &__flex-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem 0;
+
+        h5 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin: 0;
+            color: $text;
+        }
+
+        p {
+            color: $para;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+
+    &__coin-list {
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            li {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #E5E5EE;
+                padding: 0 0 1.2rem;
+            }
+        }
+    }
+
+    &__value {
+        p {
+            margin: 0 0 1rem;
+            color: $text;
+            font-size: 1.4rem;
+            text-align: end;
+            font-weight: 700;
+        }
+
+        span {
+            color: #848698;
+            font-size: 1.4rem;
+            display: block;
+            text-align: end;
+            font-weight: 500;
+        }
+    }
+
+    &__coin-flex {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    &__content {
+        h5 {
+            color: $text;
+            font-size: 1.4rem;
+            margin: 0 0 0.5rem;
+            font-weight: 500;
+        }
+
+        p {
+            color: $para;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+
+    &__gird {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.4rem;
+
+        @media #{$md} {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        @media #{$xs} {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.4rem;
+        }
+    }
+
+    &__grid-card {
+        box-shadow: 0px 4px 37.3px 0px #00000008;
+        border: 1px solid #E5E5EE;
+        background-color: $white;
+        border-radius: 0.8rem;
+        padding: 2.4rem;
+        min-height: 18rem;
+
+        @media #{$xs} {
+            min-height: unset;
+            padding: 1.4rem;
+        }
+
+        p {
+            color: $text;
+            font-size: 2rem;
+            font-weight: 500;
+            margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
+        }
+
+        h5 {
+            font-size: 3.2rem;
+            font-weight: 600;
+            margin: 0;
+            color: $text;
+
+            @media #{$xs} {
+                font-size: 1.6rem;
+            }
+        }
+
+        h6 {
+            font-size: 2rem;
+            font-weight: 500;
+            color: $para;
+            margin: 1.8rem 0 0;
+
+            @media #{$xs} {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &__grid-btn {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        button {
+            all: unset !important;
+            cursor: pointer !important;
+        }
+    }
+
+    &__grid-flex {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        h4 {
+            color: $text;
+            font-size: 3.2rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        img {
+            width: 2.4rem;
+        }
+    }
+
+    &__history-sec {
+        margin: 3rem 0 0;
+    }
+
+    &__history-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media #{$xs} {
+            flex-direction: column;
+            align-items: baseline;
+            gap: 2rem;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 0;
+            color: $text;
+        }
+    }
+
+    &__history {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 0;
+            color: $para;
+        }
+    }
+
+    &__table {
+        background-color: $white;
+        padding: 2.4rem;
+        border: 1px solid #E5E5EE;
+        box-shadow: 0px 4px 37.3px 0px #00000008;
+        border-radius: 0.8rem;
+        margin: 1.8rem 0 0;
+        overflow-x: auto;
+        min-height: 45rem;
+        position: relative;
+
+        table {
+            width: 100%;
+
+            thead {
+                tr {
+                    th {
+                        color: $para;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        padding: 2rem 1rem;
+                        text-align: start;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        color: $text;
+                        padding: 2rem 1rem;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    &__table-flex {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__table-icon {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    &__table-content {
+        flex: 1;
+
+        h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0 0 0.3rem;
+            color: $text;
+        }
+
+        p {
+            color: $para;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+
+    &__copy {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+
+        p {
+            color: $text;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        button {
+            all: unset;
+            cursor: pointer;
+            box-shadow: none !important;
+
+            img {
+                max-width: 3rem;
+            }
+
+            &:hover {
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    &__table-action {
+        button {
+            all: unset;
+            cursor: pointer;
+
+            &:hover {
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    &__table-profit {
+        background-color: #DEFFE9;
+        padding: 0.4rem 0.6rem;
+        height: 2.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #55B275;
+        font-size: 1.4rem;
+        border-radius: 0.4rem;
+        font-weight: 500;
+    }
+
+    &__table-loss {
+        background-color: #FFEDED;
+        padding: 0.4rem 0.6rem;
+        height: 2.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FF3535;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border-radius: 0.4rem;
+    }
+}
+
+.success {
+    padding: 3rem 1rem;
+
+    &__img {
+        text-align: center;
+
+        h4 {
+            color: $text;
+            font-size: 1.8rem;
+            margin: 0.8rem 0 0;
+            font-weight: 600;
+        }
+    }
+
+    &__content {
+        margin: 2rem 0 0;
+
+        p {
+            color: #4F4F4F;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0;
+            text-align: center;
+
+            span {
+                color: $text;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__btn {
+        margin: 2.4rem 0 0;
+
+        button {
+            width: 100%;
+        }
+    }
+}
+
+.qr {
+    padding: 3rem 1rem;
+
+    &__btn {
+        margin: 2.4rem 0 0;
+
+        button {
+            width: 100%;
+        }
+    }
+
+    &__download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 0;
+
+        button {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            justify-content: center;
+
+            span {
+                color: $text;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    &__content {
+        text-align: center;
+
+        h4 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 0 2rem;
+            color: $text;
+        }
+    }
+
+    &__img {
+        text-align: center;
+    }
+
+}
